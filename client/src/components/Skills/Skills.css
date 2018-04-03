@@ -1,0 +1,25 @@
+.skills{
+	background-color:#FFC107;
+}
+
+.containerSkills{
+	padding-top: 30px;
+	padding-bottom: 15px;
+	
+}
+
+.skillTitle{
+	text-align: center;
+	font-size: 16pt;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.offerTitle{
+
+	text-align: center;
+	font-size: 32pt;
+	font-weight: 500;
+
+
+}

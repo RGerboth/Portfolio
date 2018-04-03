@@ -1,0 +1,35 @@
+h1.headerMessage {
+	color:blue;
+	background-color: lightgray;
+	height: 100px;
+	padding: 20px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 40px;
+}
+
+li.list-group-item {
+	font-size: 2rem;
+}
+
+input.form-control {
+	font-size: 2rem;
+}
+
+span.delete-btn {
+	font-size: 1.5rem;
+}
+
+.update-btn {
+	font-size: 1.5rem;
+	color: green;
+}
+
+textarea.form-control {
+	height: 300px;
+	font-size: 2rem;
+}
+
+.btn {
+	font-size: 1.5rem;
+}

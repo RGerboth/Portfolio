@@ -1,0 +1,28 @@
+
+
+
+.contactContainer{
+	
+	background-color: #2274A5;
+	padding-top:10px;
+
+
+}
+
+.section{
+	width: 70%;
+	height: 700px;
+	position: relative;
+	margin:auto;
+	margin-top: 30px;
+	padding:20px;
+	background-color: white;
+}
+
+.md-form label{
+	font-size: 12pt;
+}
+
+nameLabel{
+	font-size: 12pt;
+}

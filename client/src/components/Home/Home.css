@@ -1,0 +1,43 @@
+.jumbotron{
+	height: 100vh;
+	background-size: 100% 100%;
+	color: white;
+	position: relative;
+  margin:none;
+  margin-bottom: 0;
+}
+
+.textHome{
+	position: absolute;
+	right: 10%;
+	bottom: 20%;
+}
+
+.btn-default{
+  background-color: #2274A5;
+  border-color: #2274A5;
+  color: #fff;
+  width:250px;
+  height:60px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+  background-color: #155d74;
+  border-color: #155d74;
+}
+
+
+#background{
+  background-image: url("images/yosemite-merced.jpg");
+
+}
+
+
+/*color pattern options
+
+  #150578 - MIDNIGHT BLUE
+  #2274A5 - LAPIS LAZULI
+  #FFC107 - MIKADO YELLOW
+  #343434 - JET
+  #D62839 - RUSTY RED
+*/

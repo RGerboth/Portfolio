@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "concurrently \"node scripts/seedAbout.js\" \"node scripts/seedContact.js\" \"node scripts/seedPortfolio.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGerboth/Portfolio.git"
+  },
+  "author": "Robert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RGerboth/Portfolio/issues"
+  },
+  "homepage": "https://github.com/RGerboth/Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "mailgun-js": "^0.16.0",
+    "mongoose": "^5.0.12",
+    "morgan": "^1.9.0",
+    "react-router-dom": "^4.2.2",
+    "create-react-app": "^1.5.2",
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.3",
+    "react-scripts": "1.1.1"
+  }
+}
