@@ -8,7 +8,8 @@ const router = require("express").Router();
 require("dotenv").config();
 
 const api_key = process.env.api_key;
-const domain = 'sandbox8d75e1ca83c6447fb6b5de2cf82c6055.mailgun.org';
+
+const domain = 'sandboxa7b2794eca8f485e89fdeb0b774df1a7.mailgun.org';
 const mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 console.log("api routes page")
@@ -72,7 +73,7 @@ module.exports = function(app){
     
     var data = {
       from: req.body.email,
-      to: 'kovacic316@gmail.com',
+      to: 'robert.gerboth@gmail.com',
       subject: req.body.subject,
       text: "Sender Name: " + req.body.name + " \n" + "Message: " + req.body.message,
     };

@@ -42,17 +42,6 @@ export default class Admin extends Component {
     contacts: ""
   };
 
-  // componentDidMount() {
-  //   auth.onAuthStateChanged((user) => {
-  //     if (user) {
-  //       this.setState({ user });
-  //       this.loadPage();
-  //     } else {
-  //       window.location = "/";
-  //     }
-  //   })
-  // }
-
   componentDidMount() {
       auth.onAuthStateChanged(firebaseUser => {
       if (firebaseUser) {
@@ -249,7 +238,7 @@ export default class Admin extends Component {
       <Container fluid>
         <Row>
           <Col size = "sm-12 md-12">
-              <h1 className="headerMessage">Bio and Project Information</h1>
+              <h1 className="headerMessage">Content Management</h1>
           </Col>
           <Col size = "md-6">
             <h1>Personal Profile</h1>
@@ -321,7 +310,7 @@ export default class Admin extends Component {
                 placeholder="Biography (Required)"
               />
               <FormBtn
-                disabled={!(this.state.aboutName && this.state.aboutBio)}
+                disabled={!(this.state.aboutName && this.state.aboutBio && this.state.homeBackImg && this.state.homeMessage && this.state.aboutbioImage)}
                 onClick={this.handleAboutSubmit}
               >
                 Submit Bio
@@ -394,13 +383,13 @@ export default class Admin extends Component {
                 placeholder="Project Description (required)"
               />
               <FormBtn
-                disabled={!this.state.portDes && !this.state.portName}
+                disabled={!(this.state.portDes && this.state.portName && this.state.portSortOrder && this.state.portImage)}
                 onClick={this.handleProjectSubmit}
               >
                 Submit as New Project
               </FormBtn>
               <FormBtn
-                disabled={!this.state.portDes && !this.state.portName}
+                disabled={!(this.state.portDes && this.state.portName && this.state.portSortOrder && this.state.portImage)}
                 onClick={this.handleProjectUpdate}
               >
                 Update Project
@@ -418,11 +407,11 @@ export default class Admin extends Component {
                     <DeleteBtn onClick={() => this.deleteProject(project._id)} />
                     <UpdateBtn onClick={() => this.selectProject(project._id)} />
                     <p><strong>{project.name}</strong></p>
-                    <p><strong>Description  : {project.portDes}</strong></p>
                     <p><strong>GitHub Link  : {project.githubURL}</strong></p>
                     <p><strong>Live Link    : {project.liveLink}</strong></p>
                     <p><strong>Image LInk   : {project.portImg}</strong></p>
                     <p><strong>Number Views : {project.portfolioClicks}</strong></p>
+                    <p><strong>Description  : {project.portDes}</strong></p>
                     <p></p>
                   </ListItem>
                 ))}
