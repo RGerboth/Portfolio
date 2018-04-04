@@ -20,14 +20,14 @@ app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Use express.static to serve the public folder as a static directory
-app.use(express.static("client/build"));
+// app.use(express.static("client/build"));
 //app.use(express.static("public"));
 
 if (process.env.NODE_ENV === "production") {
  app.use(express.static("client/build"));
 } else {
  app.use(express.static("public"));
-}
+};
 
 require("./controllers/apiRoutes.js")(app);
 require("./controllers/htmlRoutes.js")(app);

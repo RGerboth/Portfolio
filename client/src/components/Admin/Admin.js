@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import Firebase from '../../firebase.js';
+
+let database = Firebase.database();
+const auth = Firebase.auth();
 
 export default class Admin extends Component {
   state = {
@@ -38,9 +42,38 @@ export default class Admin extends Component {
     contacts: ""
   };
 
+  // componentDidMount() {
+  //   auth.onAuthStateChanged((user) => {
+  //     if (user) {
+  //       this.setState({ user });
+  //       this.loadPage();
+  //     } else {
+  //       window.location = "/";
+  //     }
+  //   })
+  // }
+
   componentDidMount() {
-    this.loadPage();
+      auth.onAuthStateChanged(firebaseUser => {
+      if (firebaseUser) {
+        console.log('logged in')
+        console.log(firebaseUser);
+        this.loadPage();
+      }
+      else {
+        console.log("Not logged in");
+        window.location = "/";
+      }
+    })
   }
+
+
+  logOut = event => {
+    Firebase.auth().signOut();
+  };
+
+
+
 
   loadPage = () => {
     console.log("loadPage in Admin");
@@ -399,6 +432,15 @@ export default class Admin extends Component {
             )}
           </Col>
         </Row>
+
+        <footer>
+          Copyright 2018 - Robert P. Gerboth
+          <br />
+        
+          <a onClick = {this.logOut}>Home</a>
+
+        </footer>
+
       </Container>
     );
   }
