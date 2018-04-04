@@ -5,13 +5,16 @@ export default {
   getAll: function() {
     return axios.get("/api/renderPage");
   },
-
+  //add first About document, one time only
+  createAbout: function(about) {
+    console.log(`Create About`);
+    return axios.post("/about", about)
+  },
   // Updates the bio information
   updateAbout: function(about) {
     console.log(`Update About ID: ${about._id} ${about.name} ${about.bio} ${about.bioImg}`); //ID valid here
     return axios.post("/about/" + about._id, about)
   },
-
   //gets the appropriate project for the modal
   getProject: function(id){
     console.log("here")

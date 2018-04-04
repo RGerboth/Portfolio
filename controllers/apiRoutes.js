@@ -188,6 +188,24 @@ module.exports = function(app){
       });
   });
 
+  // Route for adding the first About, one time 
+  app.post("/about", function(req, res) {
+    console.log(`Inside the /about POST route.`)
+    console.log(req.body)
+    db.About.create(req.body)
+      .then(function(dbAbout) {
+        console.log("New About ID: " + dbAbout._id)
+      })
+      .then(function(dbAbout) {
+
+        res.json(dbAbout);
+      })
+      .catch(function(err) {
+
+        res.json(err);
+      });
+  });
+
   // Route for saving/updating About (bio) information
   app.post("/about/:id", function(req, res) {
 
@@ -205,7 +223,6 @@ module.exports = function(app){
       .catch(function(err) {
           // If an error occurs
             res.json(err);
-          });
       });
   });
 

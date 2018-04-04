@@ -144,12 +144,28 @@ export default class Admin extends Component {
 
   handleAboutSubmit = event => {
     event.preventDefault();
-      console.log(`this.state.aboutID: ${this.state.aboutID}`)
-      if (!this.state.aboutID) {
-        this.setState({aboutID: "newuser"})
-      };
       console.log(`Inside handleAboutSubmit. About ID: ${this.state.aboutID} ${this.state.aboutName} ${this.state.aboutbioImage} ${this.state.aboutBio}`);
 
+      if (!this.state.aboutID) {
+
+        API.createAbout({
+          name: this.state.aboutName,
+          bioImg: this.state.aboutbioImage,
+          bio: this.state.aboutBio,
+          backImg: this.state.homeBackImg,
+          message: this.state.homeMessage,
+          title: this.state.homeTitle,
+          facebookURL: this.state.aboutFBURL,
+          linkedinURL: this.state.aboutLIURL,
+          githubURL: this.state.aboutGHURL,
+          email: this.state.aboutEmail,
+          phone: this.state.aboutPhone
+        })
+        .then(res => this.loadPage())
+        .catch(err => console.log(err));
+
+      } else {
+        
       API.updateAbout({
         _id: this.state.aboutID,
         name: this.state.aboutName,
@@ -165,7 +181,8 @@ export default class Admin extends Component {
         phone: this.state.aboutPhone
       })
         .then(res => this.loadPage())
-        .catch(err => console.log(err));
+        .catch(err => console.log(err))
+      };
   };
 
   handleProjectSubmit = event => {
@@ -199,7 +216,7 @@ export default class Admin extends Component {
       <Container fluid>
         <Row>
           <Col size = "sm-12 md-12">
-              <h1 class="headerMessage">Bio and Project Information</h1>
+              <h1 className="headerMessage">Bio and Project Information</h1>
           </Col>
           <Col size = "md-6">
             <h1>Personal Profile</h1>
@@ -226,31 +243,31 @@ export default class Admin extends Component {
                 value={this.state.aboutFBURL}
                 onChange={this.handleInputChange}
                 name="aboutFBURL"
-                placeholder="Biography Image URL"
+                placeholder="Facebook URL"
               />
               <Input
                 value={this.state.aboutGHURL}
                 onChange={this.handleInputChange}
                 name="aboutGHURL"
-                placeholder="Biography Image URL"
+                placeholder="GitHub URL"
               />
               <Input
                 value={this.state.aboutLIURL}
                 onChange={this.handleInputChange}
                 name="aboutLIURL"
-                placeholder="Biography Image URL"
+                placeholder="LinkedIn URL"
               />
               <Input
                 value={this.state.aboutEmail}
                 onChange={this.handleInputChange}
                 name="aboutEmail"
-                placeholder="Biography Image URL"
+                placeholder="Email"
               />
               <Input
                 value={this.state.aboutPhone}
                 onChange={this.handleInputChange}
                 name="aboutPhone"
-                placeholder="Biography Image URL"
+                placeholder="Phone"
               />
               <Input
                 value={this.state.homeMessage}
