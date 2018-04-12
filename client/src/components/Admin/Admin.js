@@ -383,13 +383,13 @@ export default class Admin extends Component {
                 placeholder="Project Description (required)"
               />
               <FormBtn
-                disabled={!(this.state.portDes && this.state.portName && this.state.portSortOrder && this.state.portImage)}
+                disabled={!(this.state.portDes && this.state.portName &&  this.state.portImage)}
                 onClick={this.handleProjectSubmit}
               >
                 Submit as New Project
               </FormBtn>
               <FormBtn
-                disabled={!(this.state.portDes && this.state.portName && this.state.portSortOrder && this.state.portImage)}
+                disabled={!(this.state.portDes && this.state.portName &&  this.state.portImage)}
                 onClick={this.handleProjectUpdate}
               >
                 Update Project

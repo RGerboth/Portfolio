@@ -13,7 +13,7 @@ var PortfolioSchema = new Schema({
   },
   sortOrder: {
     type: Number,
-    required: true
+    required: false
   },
   name: {
     type: String,
@@ -31,11 +31,10 @@ var PortfolioSchema = new Schema({
     type: String,
     required: false
   },
-  portfolioClicks:
-    {
-      type: Number,
-      required: false
-    }
+  portfolioClicks: {
+    type: Number,
+    required: false
+  }
 });
 
 // This creates our model from the above schema, using mongoose's model method
