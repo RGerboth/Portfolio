@@ -24,7 +24,6 @@
   "homepage": "https://github.com/RGerboth/Portfolio#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "clipboard": "^2.0.0",
     "concurrently": "^3.5.1",
     "create-react-app": "^1.5.2",
     "dotenv": "^5.0.1",

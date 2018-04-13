@@ -41,16 +41,16 @@ componentDidMount() {
 								What I Can Offer
 							</div>
 					</Col>
-						<Col md={3} className="skillsTexts">
+						<Col md={3}>
 							
-							<h1>BackEnd</h1>
-							<h3>Node.js</h3>
+							<h3>BackEnd</h3>
+							<h4>Node.js</h4>
 							<ul>
 								<li>Express.js</li>
 								<li>User Authentication</li>
 								<li>MERN Stack</li>				
 							</ul>
-							<h3>Databases</h3>
+							<h4>Databases</h4>
 							<ul>
 								<li>MySQL</li>
 								<li>Mongo</li>
@@ -58,16 +58,16 @@ componentDidMount() {
 								<li>Mongoose</li>				
 							</ul>
 						</Col>
-						<Col md={3} className="skillsTexts">
+						<Col md={3}>
 							
-							<h1>FrontEnd</h1>
+							<h3>FrontEnd</h3>
 							<h4></h4>
 							<ul>
 								<li>Express.js</li>
 								<li>User Authentication</li>
 								<li>MERN Stack</li>				
 							</ul>
-							<h1>Databases</h1>
+							<h4>Databases</h4>
 							<ul>
 								<li>MySQL</li>
 								<li>Mongo</li>
@@ -75,7 +75,7 @@ componentDidMount() {
 								<li>Mongoose</li>				
 							</ul>
 						</Col>
-						<Col md={3} className="skillsTexts">
+						<Col md={3}>
 							
 							<h3>{this.state.aboutName}</h3>
 							<p>{this.state.aboutBio}</p>
@@ -85,7 +85,7 @@ componentDidMount() {
 								Tollit veritus invidunt his te, mei ea suas graeco. Quando euismod id mealosophia ius. Usu postea admodum expetendis te. Movet euismod vocibus vix ut. Mea ad nostro voluptua nominati, vix ceteros fastidii eloquentiam ut, quis ornatus eos et. Elitr facete aliquam ad his, alii errem eum cu. Ut dignissim argumentum duo, te facilisi assueverit sadipscing per. Ubique tamquam incorrupte his an.
 							</p>
 						</Col>
-						<Col md={3} className="skillsTexts">
+						<Col md={3}>
 							
 							<h3>{this.state.aboutName}</h3>
 							<p>{this.state.aboutBio}</p>

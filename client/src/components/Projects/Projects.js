@@ -77,7 +77,7 @@ export default class Projects extends Component {
 	render() {
 		return (
       <body>
-			   <div className="Projects">
+			   <div>
 				
     				<div id="modal-container" onClick = {this.closeModal}>
               <div class="modal-background" >
@@ -97,7 +97,7 @@ export default class Projects extends Component {
               </div>
             </div>
             <div class="content container">
-              <div className="Projects text-center projectstitle">Projects</div>
+              <h1>Projects Go Below</h1>
               <div class="buttons col-12">
 
                 {this.state.projects.map(project => (

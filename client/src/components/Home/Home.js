@@ -11,7 +11,6 @@ import Skills from '../Skills';
 import Footer from '../Footer';
 import Contact from '../Contact';
 import path from "path";
-import Clipboard from "clipboard";
 
 /*
 found this function here 
@@ -30,16 +29,6 @@ http://stackoverflow.com/a/26831113
 //   document.getElementsByClassName("caption").css("bottom", (window_offset / 4) );
 // });
 
-
-// For copying to clipboard
-var clip = new Clipboard('.copyToClipboard');
-
-clip.on("success", function() {
-  document.body.insertAdjacentHTML('beforeend', '<div>that worked.</div>');
-});
-clip.on("error", function() {
-  document.body.insertAdjacentHTML('beforeend', '<div>that didn\'t work.</div>');
-});
 
 export default class Home extends Component {
   state = {
@@ -81,25 +70,13 @@ export default class Home extends Component {
 		        <div class= "fluid-container" >
 		          <Navbar />
 		          	<div class="fluid-container">
-						<Jumbotron id="background" >
-					{/*-----------------------------------------Insert own info here-------------------------------------------------------- */}
-							<div className="icons">
-								<a href="https://www.linkedin.com/in/deegii-altangerel/" target="_blank"><i className="fab fa-linkedin-in"></i></a>
-								<br />
-								<a href="https://github.com/deegiialt" target="_blank"><i className="fab fa-github-alt"></i></a>
-								<br />
-								<a className="copyToClipboard" data-clipboard-text="aagiideegii@gmail.com"><i className="far fa-envelope" data-toggle="tooltip" title="Click here to copy my email to your clipboard!" data-placement="bottom"></i></a>
-
-							</div>
-							<h1 className="introduction">hello, I'm ___________</h1>
-							<h2 className="jobtitle">Full Stack Web Developer</h2>
-							<div className="textHome">
+						<Jumbotron id = "background" >
+							<div class="textHome">
 								<h2>{this.state.homeMessage}</h2>
 								<p>{this.state.homeTitle}</p>
 								<br />
 								
-								
-								{/*<Button class="btnPrimary">Learn More About Me</Button>*/}
+								<Button class="btnPrimary">Learn More About Me</Button>
 								
 							</div>
 						</Jumbotron>
