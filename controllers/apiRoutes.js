@@ -73,7 +73,7 @@ module.exports = function(app){
     
     var data = {
       from: req.body.email,
-      to: 'robert.gerboth@gmail.com',
+      to: 'aagiideegii@gmail.com',
       subject: req.body.subject,
       text: "Sender Name: " + req.body.name + " \n" + "Message: " + req.body.message,
     };

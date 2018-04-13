@@ -54,6 +54,7 @@ handleSignup = event => {
 	});
 
 	const promise = auth.createUserWithEmailAndPassword(this.state.userName, this.state.Password);
+	// const promise = auth.createUserWithEmailAndPassword("aagiideegii@gmail.com", 840118);
 
 	promise.catch(err => console.log(err.message));
 
@@ -128,8 +129,8 @@ render() {
 	            </div>
             
 			<footer>
-				Copyright 2018 - Robert P Gerboth
-				<br />
+				{/*Copyright 2018 - Robert P Gerboth
+				<br />*/}
       			<a id="two" class="buttonFooter" onClick = {this.openModal}>Admin </a>
 			</footer>
 		</body>
