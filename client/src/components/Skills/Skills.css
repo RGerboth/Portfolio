@@ -1,5 +1,8 @@
 .skills{
 	background-color:#FFC107;
+	height: 100vh;
+	color: white;
+	font-family: Quicksand, sans-serif;
 }
 
 .containerSkills{
@@ -10,16 +13,17 @@
 
 .skillTitle{
 	text-align: center;
-	font-size: 16pt;
+	font-size: 40pt;
 	font-weight: normal;
 	margin-bottom: 10px;
 }
 
 .offerTitle{
-
 	text-align: center;
-	font-size: 32pt;
+	font-size: 28pt;
 	font-weight: 500;
+}
 
-
+.skillsTexts {
+	font-size: 15px;
 }

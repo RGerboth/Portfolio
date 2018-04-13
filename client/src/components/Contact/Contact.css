@@ -2,11 +2,9 @@
 
 
 .contactContainer{
-	
-	background-color: #2274A5;
-	padding-top:10px;
-
-
+	background-color: #28445F;
+/*	padding-top:10px;*/
+	height: 100vh;
 }
 
 .section{
@@ -14,15 +12,16 @@
 	height: 700px;
 	position: relative;
 	margin:auto;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 	padding:20px;
 	background-color: white;
+	top: 20px;
 }
 
 .md-form label{
 	font-size: 12pt;
 }
 
-nameLabel{
+.nameLabel{
 	font-size: 12pt;
 }

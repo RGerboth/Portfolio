@@ -9,13 +9,24 @@
   font-family: helvetica neue, helvetica, arial, sans-serif;
   font-weight: 200;
 }*/
+.Projects {
+  height: 100vh;
+  background: #7EA16B;
+  font-family: Quicksand, sans-serif;
+  color: white;
+}
+
+.projectstitle {
+  font-size: 50px;
+  padding-top: 5%;
+}
 
 
-#link{
+#link {
   color:black;
 }
 
-.modal{
+.modal {
   width:70%;
   height:70%;
 }
@@ -128,7 +139,6 @@ html.modal-active, body.modal-active {
 .content {
   min-height: 100%;
   height: 100%;
-  background: white;
   position: relative;
   z-index: 0;
 }
