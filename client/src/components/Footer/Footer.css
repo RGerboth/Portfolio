@@ -1,10 +1,10 @@
 footer{
 
-	/*height: 75px;*/
-	background-color: #28445F;
+	height: 75px;
+	background-color: #2274A5;
 	color:white;
 	text-align: center;
-	/*padding-top: 15px;*/
+	padding-top: 15px;
 }
 
 a{
@@ -144,7 +144,7 @@ html.modal-active, body.modal-active {
 .content {
   min-height: 100%;
   height: 100%;
-  /*background: white;*/
+  background: white;
   position: relative;
   z-index: 0;
 }
