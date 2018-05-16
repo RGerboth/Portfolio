@@ -17,13 +17,13 @@
 
 
 .about-profile-pic {
-
 	float:left;
+	margin-right: 20px;
 }
 
 .bioContent{
-	float:left;
-	margin:10px;
+	/*float:left;*/
+/*	margin:10px;*/
 	font-family: sans-serif;
 	font-size: 24px;
 	font-weight: 500;

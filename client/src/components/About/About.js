@@ -39,13 +39,9 @@ export default class About extends Component {
 							<h2 class="aboutTitle">{this.state.aboutWelcome}</h2>
 						</div>
 					</Col>
-					<Col md={3} mdOffset={1}>
+					<Col md={8} mdOffset={2}>
 						<Image src = {this.state.aboutbioImage} className = 'about-profile-pic' rounded/>
-					</Col>
-					<Col md={7}>
-						<div>
-							<p className= "bioContent">{this.state.aboutBio}</p>
-						</div>
+						<p className= "bioContent">{this.state.aboutBio}</p>
 					</Col>
 				</div>
 			</div>

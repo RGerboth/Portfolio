@@ -24,7 +24,7 @@ module.exports = function(app){
     console.log("here in the renderPage route")
 
     let promiseArray = [
-      db.Portfolio.find({}),
+      db.Portfolio.find({}).sort({ sortOrder: 1 }),
       db.About.find({}),
       db.Contact.find({})
     ];
