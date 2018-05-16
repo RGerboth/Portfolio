@@ -12,24 +12,6 @@ import Footer from '../Footer';
 import Contact from '../Contact';
 import path from "path";
 
-/*
-found this function here 
-http://stackoverflow.com/a/26831113
-*/
-
-// function inViewport($el) {
-//     var H = window.document.height(),
-//         r = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
-//     return Math.max(0, t>0? H-t : (b<H?b:H));  
-// }
-
-// window.document.on("scroll resize", function(){
-//   var window_offset = inViewport(document.getElementsByClassName("intro")); 
-//   document.getElementsByClassName("overlay").height(window_offset);
-//   document.getElementsByClassName("caption").css("bottom", (window_offset / 4) );
-// });
-
-
 export default class Home extends Component {
   state = {
     homeBackImg: "",
@@ -49,8 +31,8 @@ export default class Home extends Component {
       	const data = res.data
         this.setState({ 
         	
-		    homeBackImg: data.about[0].bckImage,
-		    homeMessage: data.about[0].name,
+		    homeBackImg: data.about[0].backImg,
+		    homeName: data.about[0].name,
 		    homeTitle: data.about[0].title,
 		    
         })
@@ -72,12 +54,11 @@ export default class Home extends Component {
 		          	<div class="fluid-container">
 						<Jumbotron id = "background" >
 							<div class="textHome">
-								<h2>{this.state.homeMessage}</h2>
-								<p>{this.state.homeTitle}</p>
-								<br />
-								
-								<Button class="btnPrimary">Learn More About Me</Button>
-								
+								<h2 class="homeName" >{this.state.homeName}</h2>
+								<h3 class="homeTitle">{this.state.homeTitle}</h3>
+
+{//								<Button class="btnPrimary">Learn More About Me</Button>
+}
 							</div>
 						</Jumbotron>
 						
