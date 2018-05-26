@@ -79,7 +79,7 @@ export default class Projects extends Component {
       <body>
 			   <div>
 				
-    				<div id="modal-container" onClick = {this.closeModal}>
+    				<div id="modal-container" class="portfolio" onClick = {this.closeModal}>
               <div class="modal-background" >
                 <div class="modal" onClick = {this.preventModalClose}>
                   <h2>{this.state.name}</h2>

@@ -11,6 +11,7 @@ state = {
 }
 
 
+
 validateForm = (event) => {
 	event.preventDefault();
 	console.log("inside of the validateForm")
@@ -53,7 +54,7 @@ validateForm = (event) => {
       	console.log(res.data)
       	const data = res.data
       	if(res.data){
-      		document.getElementById('status').innerHTML = "Your message was sent! Michael will get back with you soon, thank you for your interest.";
+      		document.getElementById('status').innerHTML = "Your message was sent! Robert will get back with you soon, thank you for your interest.";
       		document.getElementById('name').value="";
       		document.getElementById('email').value="";
       		document.getElementById('subject').value="";
@@ -95,35 +96,28 @@ saveContact = () => {
 
 	render() {
 		return (
-			<div className= "fluid-container contactContainer" >
+			<div className= "fluid-container contactContainer contact" >
 				
 			
 				<section class="section" onClick={this.toggleValdate}>
 
-				    <h2 class="section-heading h1 pt-4">Contact us</h2>
-				    <p class="section-description">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-				        matter of hours to help you.</p>
-
+				    <h2 class="section-heading pt-4" id="contactFormHeader">Contact and Connect</h2>
+{/*				    <p class="section-description" id="contactFormMessage">I would love to hear from you and will get back to you as soon as possible.</p>
+*/}
 				    <div class="row">
-
-				        <div class="col-md-8 col-xl-9">
+				        <div class="col-md-8 col-xl-8">
 				            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
 				                <div class="row">
-
-				               
 				                    <div class="col-md-6">
 				                        <div class="md-form">
 				                            <input type="text" id="name" name="name" class="form-control" onSelect={this.toggleForm} />
-				                            <label for="name" id="nameLabel"class="active">Your name</label>
+				                            <label for="name" id="nameLabel"class="active field-label">Your name</label>
 				                        </div>
 				                    </div>
-
-				                 
 				                    <div class="col-md-6">
 				                        <div class="md-form">
 				                            <input type="text" id="email" name="email" class="form-control" />
-				                            <label for="email" id="labelEmail" class="active">Your email</label>
+				                            <label for="email" id="emailLabel" class="active">Your email</label>
 				                        </div>
 				                    </div>
 				                 
@@ -135,7 +129,7 @@ saveContact = () => {
 				                    <div class="col-md-12">
 				                        <div class="md-form">
 				                            <input type="text" id="subject" name="subject" class="form-control" />
-				                            <label for="subject" id="labelSubject" class="active">Subject</label>
+				                            <label for="subject" id="subjectLabel" class="active">Subject</label>
 				                        </div>
 				                    </div>
 				                </div>
@@ -149,7 +143,7 @@ saveContact = () => {
 
 				                        <div class="md-form">
 				                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-				                            <label for="message" id= "labelMessege" class="">Your message</label>
+				                            <label for="message" id= "messageLabel" class="">Your message</label>
 				                        </div>
 
 				                    </div>
@@ -159,13 +153,16 @@ saveContact = () => {
 				            </form>
 
 				            <div class="center-on-small-only">
-				                <a class="btn btn-primary" href="mailto:kovacic316@gmail.com?Subject=subject" target="_blank" onClick= {this.validateForm}>Send</a>
+				                <a class="btn btn-primary" href="mailto:robert.gerboth@gmail.com?Subject=subject" target="_blank" onClick= {this.validateForm}>Send</a>
 				            </div>
 				            <div id="status"></div>
 				        </div>
 				      
-				        <div class="col-md-4 col-xl-3">
-				            <ul class="contact-icons">
+				        <div class="col-md-4 col-xl-4">
+
+				                <a class="btn btn-primary" href="https://github.com/rgerboth" target="_blank">GitHub</a>
+				                <a class="btn btn-primary" href="https://linkedin.com/in/robert-gerboth" target="_blank">LinkedIn</a>
+{/*			            <ul class="contact-icons">
 				                <li><i class="fa fa-map-marker fa-2x"></i>
 				                    <p>San Francisco, CA 94126, USA</p>
 				                </li>
@@ -175,9 +172,10 @@ saveContact = () => {
 				                </li>
 
 				                <li><i class="fa fa-envelope fa-2x"></i>
-				                    <p>contact@mdbootstrap.com</p>
+				                    <p>robert.gerboth@gmail.com</p>
 				                </li>
 				            </ul>
+*/}
 				        </div>
 				      
 

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './CustomNavbar.css';
 import ReactDOM from "react-dom"
 import About from '../About';
+import scrollToElement from 'scroll-to-element';
+
 
 export default class CustomNavbar extends Component {
 
@@ -16,17 +18,23 @@ modalClick = (event) => {
 
 }
 
+// scroll = (event) => {
+// 	const tesNode = ReactDOM.findDOMNode(this.About)
+// 	console.log(tesNode)
+// 	  // if (some_logic){
+// 	  window.scrollTo(0, tesNode);
+// 	  // }
+
+
+// 	// document.getElementById('aboutInfo').scrollIntoView();
+// }
+
+
 scroll = (event) => {
-	const tesNode = ReactDOM.findDOMNode(this.About)
-	console.log(tesNode)
-	  // if (some_logic){
-	  window.scrollTo(0, tesNode);
-	  // }
-
-
-	// document.getElementById('aboutInfo').scrollIntoView();
+	let element = event.target.id;
+	
+	scrollToElement("." + element);
 }
-
 
 
 
@@ -39,22 +47,22 @@ scroll = (event) => {
 		    <nav id="sidebar-wrapper">
 		      <ul class="sidebar-nav">
 		        <li class="sidebar-brand">
-		          <a class="js-scroll-trigger" onClick= {this.scroll} href="#page-top">Michael</a>
+		          <a class="js-scroll-trigger" id="home" onClick={this.scroll}>Robert</a>
 		        </li>
 		        <li class="sidebar-nav-item">
-		          <a class="js-scroll-trigger" href="#page-top">Home</a>
+		          <a class="js-scroll-trigger" id="home" onClick={this.scroll}>Home</a>
 		        </li>
 		        <li class="sidebar-nav-item">
-		          <a class="js-scroll-trigger" onClick={this.scroll}href="#about">About</a>
+		          <a class="js-scroll-trigger" id="bio" onClick={this.scroll}>Bio</a>
 		        </li>
 		        <li class="sidebar-nav-item">
-		          <a class="js-scroll-trigger" href="#services">Services</a>
+		          <a class="js-scroll-trigger" id="skills" onClick={this.scroll}>Skills Summary</a>
 		        </li>
 		        <li class="sidebar-nav-item">
-		          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+		          <a class="js-scroll-trigger" id="portfolio" onClick={this.scroll}>Portfolio</a>
 		        </li>
 		        <li class="sidebar-nav-item">
-		          <a class="js-scroll-trigger" href="#contact">Contact</a>
+		          <a class="js-scroll-trigger" id="contact" onClick={this.scroll}>Contact</a>
 		        </li>
 		      </ul>
 		    </nav>

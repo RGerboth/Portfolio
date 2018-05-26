@@ -8,18 +8,24 @@
 	
 }
 
+.skillCategory {
+	font-size: 48px;
+}
+
 .skillTitle{
 	text-align: center;
-	font-size: 16pt;
+	font-size: 2.0rem;
 	font-weight: normal;
 	margin-bottom: 10px;
 }
 
 .offerTitle{
-
 	text-align: center;
-	font-size: 32pt;
-	font-weight: 500;
+	font-size: 48px;
+	font-weight: 700;
+}
 
-
+li {
+	font-size: 24px;
+	font-weight: 600;
 }

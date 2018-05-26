@@ -37,26 +37,7 @@ componentDidMount() {
 							</div>
 					</Col>
 						<Col md={3}>
-							
-							<h3>BackEnd</h3>
-							<h4>Node.js</h4>
-							<ul>
-								<li>Express.js</li>
-								<li>User Authentication</li>
-								<li>MERN Stack</li>				
-							</ul>
-						</Col>
-						<Col md={3}>
-							<h4>Databases</h4>
-							<ul>
-								<li>MySQL</li>
-								<li>Mongo</li>
-								<li>Sequelize</li>
-								<li>Mongoose</li>				
-							</ul>
-						</Col>
-						<Col md={3}>
-							<h3>FrontEnd</h3>
+							<h3 class="skillCategory">FrontEnd</h3>
 							<h4></h4>
 							<ul>
 								<li>Express.js</li>
@@ -65,7 +46,25 @@ componentDidMount() {
 							</ul>
 						</Col>
 						<Col md={3}>
-							<h4>Databases</h4>
+							<h3 class="skillCategory">BackEnd</h3>
+							<ul>
+								<li>Node.js</li>
+								<li>Express.js</li>
+								<li>User Authentication</li>
+								<li>MERN Stack</li>				
+							</ul>
+						</Col>
+						<Col md={3}>
+							<h3 class="skillCategory">Databases</h3>
+							<ul>
+								<li>MySQL</li>
+								<li>Mongo</li>
+								<li>Sequelize</li>
+								<li>Mongoose</li>				
+							</ul>
+						</Col>
+						<Col md={3}>
+							<h3 class="skillCategory">Databases</h3>
 							<ul>
 								<li>MySQL</li>
 								<li>Mongo</li>

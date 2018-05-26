@@ -1,28 +1,56 @@
-
-
-
-.contactContainer{
-	
+/*
+.contactContainer {
 	background-color: #2274A5;
 	padding-top:10px;
-
-
 }
 
-.section{
-	width: 70%;
-	height: 700px;
+.section {
+	width: 90%;
+	height: 100%;
 	position: relative;
 	margin:auto;
 	margin-top: 30px;
 	padding:20px;
 	background-color: white;
 }
+*/
 
-.md-form label{
-	font-size: 12pt;
+#contactFormHeader {
+	text-align: center;
+	font-size: 36px;
+	background-color: lightgray;
+	padding-bottom: 20px;
+
+}
+/*
+
+#contactFormMessage {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 50px;
+
 }
 
-nameLabel{
-	font-size: 12pt;
+.md-form label {
+	font-size: 24px;
 }
+
+#nameLabel {
+	font-size: 24px;
+}
+
+#subjectLabel {
+	font-size: 24px;
+	margin: 20px 0 20px;
+	padding-top: 10px;
+}
+
+#emailLabel {
+	font-size: 24px;
+}
+
+#messageLabel {
+	font-size: 24px;
+	margin: 0 0 20px;
+}
+*/

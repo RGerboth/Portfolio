@@ -14,9 +14,13 @@ import path from "path";
 
 export default class Home extends Component {
   state = {
+  	homeName: "Loading...",
     homeBackImg: "",
     homeMessage: "",
     homeTitle: "",
+    linktoLinkedIn: "",
+    linktoGitHub: "",
+    linktoFacebook: "",
   };
 
   componentDidMount() {
@@ -30,11 +34,12 @@ export default class Home extends Component {
       	console.log(res.data)
       	const data = res.data
         this.setState({ 
-        	
 		    homeBackImg: data.about[0].backImg,
 		    homeName: data.about[0].name,
 		    homeTitle: data.about[0].title,
-		    
+   		    linktoLinkedIn: data.about[0].linkedinURL,
+		    linktoFacenook: data.about[0].facebookURL,
+		    linktoGitHub: data.about[0].githubURL
         })
         console.log("background image: " + this.state.homeBackImg)
     })
@@ -49,7 +54,7 @@ export default class Home extends Component {
 			<Router>
 
 			<wrapper>
-		        <div class= "fluid-container" >
+		        <div class= "fluid-container home" >
 		          <Navbar />
 		          	<div class="fluid-container">
 						<Jumbotron id = "background" >
@@ -67,7 +72,6 @@ export default class Home extends Component {
 					<About />
 					<Skills />
 					<Projects />
-
 					<Contact />
 					
 				</div>
