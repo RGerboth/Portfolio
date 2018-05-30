@@ -79,7 +79,7 @@ export default class Projects extends Component {
       <body>
          <div>
             <div class="content container portfolio">
-              <h1>Projects</h1>
+              <h1 id="portfolioHeader">Projects</h1>
               <div class="buttons col-12">
 
                 {this.state.projects.map(project => (
@@ -99,11 +99,12 @@ export default class Projects extends Component {
                   <h2>{this.state.name}</h2>
                   <img id="modalImage" src= {this.state.image} />
                   <p className = "projectSummary">{this.state.description}</p>
-                  <a id="link" href = {this.state.urlGit} target= "_blank"> See the repo on GitHub </a>
-                  <br />
+                </div>
+                <div class="modalLinkContainer">
+                  <a class="btn btn-primary" id="linkModal" href = {this.state.urlGit} target= "_blank">Visit on GitHub</a>
                   {this.state.urlLive ? (
-                  <a id="link" href = {this.state.urlLive} target= "_blank"> See the live site here.  </a>
-                    ) : ("") }
+                    <a class="btn btn-primary" id="linkModal" href = {this.state.urlLive} target= "_blank">Try it out here</a>
+                  ) : ("") }
 
                 </div>
               </div>

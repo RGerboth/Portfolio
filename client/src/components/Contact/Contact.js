@@ -105,7 +105,7 @@ saveContact = () => {
 {/*				    <p class="section-description" id="contactFormMessage">I would love to hear from you and will get back to you as soon as possible.</p>
 */}
 				    <div class="row">
-				        <div class="col-md-8 col-xl-8">
+				        <div class="col-md-6 col-xl-6">
 				            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 				                <div class="row">
 				                    <div class="col-md-6">
@@ -158,10 +158,17 @@ saveContact = () => {
 				            <div id="status"></div>
 				        </div>
 				      
-				        <div class="col-md-4 col-xl-4">
-
-				                <a class="btn btn-primary" href="https://github.com/rgerboth" target="_blank">GitHub</a>
-				                <a class="btn btn-primary" href="https://linkedin.com/in/robert-gerboth" target="_blank">LinkedIn</a>
+				        <div class="col-md-2 col-xl-2">
+	                      <a class="socialMediaIcons" href="https://github.com/RGerboth" target="_blank">
+	                        <i className="fab fa-github-square fa-10x"></i>
+                          </a>
+                          <br />
+	                      <a class="socialMediaIcons" href="https://linkedin.com/in/robert-gerboth" target="_blank">
+	                        <i className="fab fa-linkedin-square fa-10x"></i>
+                          </a>
+{/*
+				                <a class="btn btn-primary gitHubButton" href="https://github.com/rgerboth" target="_blank">GitHub</a>
+				                <a class="btn btn-primary linkedInButton" href="https://linkedin.com/in/robert-gerboth" target="_blank">LinkedIn</a>
 {/*			            <ul class="contact-icons">
 				                <li><i class="fa fa-map-marker fa-2x"></i>
 				                    <p>San Francisco, CA 94126, USA</p>

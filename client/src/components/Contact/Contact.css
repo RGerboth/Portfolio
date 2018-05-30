@@ -15,14 +15,20 @@
 }
 */
 
+.socialMediaIcons {
+	color: black;
+}
+
 #contactFormHeader {
 	text-align: center;
 	font-size: 36px;
 	background-color: lightgray;
 	padding-bottom: 20px;
-
 }
-/*
+
+#contact-form {
+	text-align: center;
+}
 
 #contactFormMessage {
 	text-align: center;
@@ -32,25 +38,24 @@
 }
 
 .md-form label {
-	font-size: 24px;
+	font-size: 12px;
 }
 
 #nameLabel {
-	font-size: 24px;
+	font-size: 12px;
 }
 
 #subjectLabel {
-	font-size: 24px;
+	font-size: 12px;
 	margin: 20px 0 20px;
 	padding-top: 10px;
 }
 
 #emailLabel {
-	font-size: 24px;
+	font-size: 12px;
 }
 
 #messageLabel {
-	font-size: 24px;
+	font-size: 12px;
 	margin: 0 0 20px;
 }
-*/
