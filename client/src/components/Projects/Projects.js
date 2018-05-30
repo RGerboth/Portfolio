@@ -34,7 +34,7 @@ export default class Projects extends Component {
         this.setState({ 
             image: data.portImg,
             name: data.name,
-            description: data.projectDes,
+            description: data.portDes,
             urlGit: data.githubURL,
             urlLive: data.liveLink
         })
@@ -74,30 +74,12 @@ export default class Projects extends Component {
     })
       .catch(err => console.log(err));
   };
-	render() {
-		return (
+  render() {
+    return (
       <body>
-			   <div>
-				
-    				<div id="modal-container" class="portfolio" onClick = {this.closeModal}>
-              <div class="modal-background" >
-                <div class="modal" onClick = {this.preventModalClose}>
-                  <h2>{this.state.name}</h2>
-                  <img id="modalImage" src= {this.state.image} />
-                  <p>{this.state.description}</p>
-                  <a id="link" href = {this.state.urlGit} target= "_blank"> Check Out Its ReadMe </a>
-                  <br />
-                  {this.state.urlLive ? (
-
-                    <a id="link" href = {this.state.urlGit} target= "_blank"> This Site is Live! </a>
-                    ) : ("") }
-                  
-
-                </div>
-              </div>
-            </div>
-            <div class="content container">
-              <h1>Projects Go Below</h1>
+         <div>
+            <div class="content container portfolio">
+              <h1>Projects</h1>
               <div class="buttons col-12">
 
                 {this.state.projects.map(project => (
@@ -108,9 +90,25 @@ export default class Projects extends Component {
                     </div>
                 
                 ))}
-                
               </div>
             </div>
+        
+            <div id="modal-container" class="portfolio" onClick = {this.closeModal}>
+              <div class="modal-background" >
+                <div class="modal" onClick = {this.preventModalClose}>
+                  <h2>{this.state.name}</h2>
+                  <img id="modalImage" src= {this.state.image} />
+                  <p className = "projectSummary">{this.state.description}</p>
+                  <a id="link" href = {this.state.urlGit} target= "_blank"> See the repo on GitHub </a>
+                  <br />
+                  {this.state.urlLive ? (
+                  <a id="link" href = {this.state.urlLive} target= "_blank"> See the live site here.  </a>
+                    ) : ("") }
+
+                </div>
+              </div>
+            </div>
+                
 			   </div>
       </body>
 		)

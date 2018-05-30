@@ -93,7 +93,7 @@ render() {
 		</Row>
 		  <Col md={12}>
 		    <h3 class="aboutPortfolio">About the Portfolio</h3>
-		    <p>This portfolio page is build on the MERN stack. Biography information, project details and links and registerd contacts are stored in MondoDB, with the system written in JavaScript utilizing Express, React and Node.js. Access to the Administration page is secured using Firebase authentication. The site is currently deployed to Heroku. For more information please click the Portfolio project tile below. </p>
+		    <p>This portfolio page is build on the MERN stack. Biography information, project details and links and registerd contacts are stored in MongoDB, with the system written in JavaScript utilizing Express, React and Node.js. Access to the Administration page is secured using Firebase authentication. The site is currently deployed to Heroku. For more information please click the Portfolio project tile below. </p>
 		  </Col>
 	  </div>
 	</div>
