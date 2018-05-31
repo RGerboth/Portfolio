@@ -1,4 +1,4 @@
-/*
+
 .contactContainer {
 	background-color: #2274A5;
 	padding-top:10px;
@@ -13,7 +13,14 @@
 	padding:20px;
 	background-color: white;
 }
-*/
+
+.portfolio {
+	background-color: red;
+}
+
+.modal-active {
+	background-color: red;
+}
 
 .socialMediaIcons {
 	color: black;
@@ -24,6 +31,7 @@
 	font-size: 36px;
 	background-color: lightgray;
 	padding-bottom: 20px;
+	margin: 0 0 20px 0;
 }
 
 #contact-form {
@@ -31,14 +39,23 @@
 }
 
 #contactFormMessage {
-	text-align: center;
-	font-size: 24px;
-	margin-bottom: 50px;
+	text-align: left;
+	font-size: 18px;
+	margin-bottom: 20px 0 50px 0;
+	padding: 30px 20px 0 0
+
+}
+
+#subject {
+	text-align: left;
+	font-size: 18px;
+	margin-bottom: 20px 0 50px 0;
+	padding: 20px 20px 0 0;
 
 }
 
 .md-form label {
-	font-size: 12px;
+	font-size: 18px;
 }
 
 #nameLabel {

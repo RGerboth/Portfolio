@@ -105,7 +105,7 @@ saveContact = () => {
 {/*				    <p class="section-description" id="contactFormMessage">I would love to hear from you and will get back to you as soon as possible.</p>
 */}
 				    <div class="row">
-				        <div class="col-md-6 col-xl-6">
+				        <div class="col-md-offset-3 col-sm-offset-3 col-md-5 col-sm-5 col-xl-5">
 				            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 				                <div class="row">
 				                    <div class="col-md-6">
@@ -142,7 +142,7 @@ saveContact = () => {
 				                    <div class="col-md-12">
 
 				                        <div class="md-form">
-				                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+				                            <textarea type="text" id="contactFormMessage" name="message" rows="2" class="form-control md-textarea"></textarea>
 				                            <label for="message" id= "messageLabel" class="">Your message</label>
 				                        </div>
 
