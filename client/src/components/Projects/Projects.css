@@ -1,4 +1,8 @@
 
+.portfolioPage {
+  background-color: #afa093;
+}
+
 h1#portfolioHeader {
   text-align: center;
   font-size: 48px;
@@ -44,7 +48,7 @@ p.projectSummary {
 
 .imgContainer{
   position: relative;
-  /*float: left;*/
+  float: left;
 }
 
 .text{
@@ -136,7 +140,7 @@ html.modal-active, body.modal-active {
 .content {
   min-height: 100%;
   height: 100%;
-  background: white;
+  background-color: #afa093;
   position: relative;
   z-index: 0;
 }

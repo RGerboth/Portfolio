@@ -47,7 +47,7 @@ scroll = (event) => {
 		    <nav id="sidebar-wrapper">
 		      <ul class="sidebar-nav">
 		        <li class="sidebar-brand">
-		          <a class="js-scroll-trigger" id="home" onClick={this.scroll}>Robert</a>
+		          <a class="js-scroll-trigger" id="home" onClick={this.scroll}></a>
 		        </li>
 		        <li class="sidebar-nav-item">
 		          <a class="js-scroll-trigger" id="home" onClick={this.scroll}>Home</a>

@@ -77,9 +77,9 @@ export default class Projects extends Component {
   render() {
     return (
       <body>
-         <div>
+         <div class="portfolioPage">
             <div class="content container portfolio">
-              <h1 id="portfolioHeader">Projects</h1>
+              <h1 class="portfolioHeader">Projects</h1>
               <div class="buttons col-12">
 
                 {this.state.projects.map(project => (

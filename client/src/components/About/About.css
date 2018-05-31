@@ -1,6 +1,10 @@
 .About{
-	background-color:lightgrey;
+	background-color:#cdbeb3;
 	padding: 20px;
+}
+
+#aboutInfo {
+	background-color: #cdbeb3;
 }
 /*
 .containerAbout{

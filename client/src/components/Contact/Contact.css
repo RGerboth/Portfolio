@@ -14,12 +14,13 @@
 	background-color: white;
 }
 
-.portfolio {
+.modal-active {
 	background-color: red;
 }
 
-.modal-active {
-	background-color: red;
+.socialIconContainer {
+ 	padding: 0 50px 50px 50px;
+ 	align-content: center;
 }
 
 .socialMediaIcons {
