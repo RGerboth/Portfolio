@@ -50,11 +50,6 @@ a{
 
 }
 
-.imgContainer{
-  position: relative;
-  float: left;
-}
-
 .text{
   position: absolute;
   bottom: 25%;

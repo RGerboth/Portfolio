@@ -3,6 +3,11 @@
   background-color: #afa093;
 }
 
+.portfolio {
+  align-content: space-between;
+
+}
+
 h1#portfolioHeader {
   text-align: center;
   font-size: 48px;
@@ -50,6 +55,7 @@ p.projectSummary {
 .imgContainer{
   position: relative;
   float: left;
+  margin: 25px;
 }
 
 .text{
@@ -62,10 +68,6 @@ p.projectSummary {
   line-height: 40px;
   font-size: 18pt;
 }
-
-
-
-
 
 /*modal css*/
 html.modal-active, body.modal-active {
