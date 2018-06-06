@@ -77,40 +77,38 @@ export default class Projects extends Component {
   render() {
     return (
       <body>
-         <div class="portfolioPage">
-            <div class="content container portfolio">
-              <h1 class="portfolioHeader">Projects</h1>
-              <div class="buttons col-12">
+        <div class="portfolioPage">
+          <div class="content container portfolio">
+            <h1 id="portfolioHeader">Projects</h1>
+            <div class="buttons col-12">
 
-                {this.state.projects.map(project => (
-                
-                    <div class="imgContainer">
-                      <img src={project.portImg} id="one" class="button" key={project._id} reactid= {project._id} onClick = {this.renderDetails} ></img>
-                      <div class="text">{project.name}</div>
-                    </div>
-                
-                ))}
-              </div>
-            </div>
+              {this.state.projects.map(project => (
+                <div class="imgContainer">
+                <img src={project.portImg} id="one" class="button" key={project._id} reactid= {project._id} onClick = {this.renderDetails} ></img>
+                <div class="text">{project.name}</div>
+                </div>  
+              ))}
         
-            <div id="modal-container" class="portfolio" onClick = {this.closeModal}>
-              <div class="modal-background" >
-                <div class="modal" onClick = {this.preventModalClose}>
-                  <h2>{this.state.name}</h2>
-                  <img id="modalImage" src= {this.state.image} />
-                  <p className = "projectSummary">{this.state.description}</p>
-                </div>
-                <div class="modalLinkContainer">
-                  <a class="btn btn-primary" id="linkModal" href = {this.state.urlGit} target= "_blank">Visit on GitHub</a>
+            </div>
+          </div>
+        
+          <div id="modal-container" class="portfolio" onClick = {this.closeModal}>
+            <div class="modal-background" >
+              <div class="modal" onClick = {this.preventModalClose}>
+                <h2>{this.state.name}</h2>
+                <img id="modalImage" src= {this.state.image} />
+                <p className = "projectSummary">{this.state.description}</p>
+              </div>
+              <div class="modalLinkContainer">
+                <a class="btn btn-primary" id="linkModal" href = {this.state.urlGit} target= "_blank">Visit on GitHub</a>
                   {this.state.urlLive ? (
                     <a class="btn btn-primary" id="linkModal" href = {this.state.urlLive} target= "_blank">Try it out here</a>
-                  ) : ("") }
-
-                </div>
+                  ) : ("") 
+                  }
               </div>
             </div>
-                
-			   </div>
+          </div>
+  		   </div>
       </body>
 		)
 	}

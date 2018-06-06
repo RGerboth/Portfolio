@@ -33,23 +33,13 @@ render() {
   return (
 	<div class="skills">
       <div className="container containerSkills">
-	    <Row className="skillsHeader">
-	      <Col md={12}>
-		    <div class="offerTitle">
-			  Skills Summary
-			</div>
-		  </Col>
-		</Row>
 		<Row className="skillsColumnHeader">
+		</Row>
+		<Row className="skillsList">
 		  <Col md={6}>
 		    <h3 class="skillCategory">Technical Skills</h3>
 		  </Col>
-		  <Col md={6}>
-			<h3 class="skillCategory">Soft Skills</h3>
-		  </Col>
-		</Row>
-		<Row className="skillsList">
-		  <Col md={3}>
+          <Col md={3}>
 		    <ul>
 			  <li>MongoDB</li>
 			  <li>Express</li>
@@ -62,14 +52,19 @@ render() {
 		  </Col>
 		  <Col md={3}>
 		    <ul>
-			  <li>JavaScript</li>
+		      <li>JavaScript</li>
 			  <li>jQuery </li>
 			  <li>AJAX </li>
 			  <li>HTML </li>
 			  <li>CSS </li>
 			  <li>Bootstrap </li>
 			  <li>Data Modeling </li>
-			</ul>
+		    </ul>
+		  </Col>
+		</Row>  
+		<Row>
+		  <Col md={6}>
+			<h3 class="skillCategory">Soft Skills</h3>
 		  </Col>
 		  <Col md={3}>
 		    <ul>
@@ -91,10 +86,6 @@ render() {
 			</ul>
 		  </Col>
 		</Row>
-		  <Col md={12}>
-		    <h3 class="aboutPortfolio">About the Portfolio</h3>
-		    <p>This portfolio page is build on the MERN stack. Biography information, project details and registerd contacts are stored in MongoDB, with the system written in JavaScript utilizing Express, React and Node.js. Access to the Administration page is secured using Firebase authentication. The site is currently deployed to Heroku. For more information please click the Portfolio project tile below. </p>
-		  </Col>
 	  </div>
 	</div>
     )

@@ -56,10 +56,10 @@ scroll = (event) => {
 		          <a class="js-scroll-trigger" id="bio" onClick={this.scroll}>Bio</a>
 		        </li>
 		        <li class="sidebar-nav-item">
-		          <a class="js-scroll-trigger" id="skills" onClick={this.scroll}>Skills Summary</a>
+		          <a class="js-scroll-trigger" id="skills" onClick={this.scroll}>Skills</a>
 		        </li>
 		        <li class="sidebar-nav-item">
-		          <a class="js-scroll-trigger" id="portfolio" onClick={this.scroll}>Portfolio</a>
+		          <a class="js-scroll-trigger" id="portfolio" onClick={this.scroll}>Projects</a>
 		        </li>
 		        <li class="sidebar-nav-item">
 		          <a class="js-scroll-trigger" id="contact" onClick={this.scroll}>Contact</a>
