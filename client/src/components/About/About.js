@@ -57,7 +57,7 @@ export default class About extends Component {
 		<Row>
 		  <Col md={8} mdOffset={2}>
 		    <p class="aboutPortfolioText">
-		      This portfolio page is supported by a custom-built, lightweight content management system implemented with the MERN stack. Biography and project information are stored in MongoDB as are new contacts. This content can be updated using the Administration page without the need to re-deploy the site. Access to the content management system is restricted using Firebase for authentication. The page and server are written in JavaScript using Express.js, React and Node.js.  
+		      My portfolio page is supported by a custom-built, lightweight content management system implemented with the MERN stack. Biography and project information are stored in MongoDB as are new contacts. This content is updated using the Administration page without the need to re-deploy the site. Access to the content management system is restricted using Firebase for authentication. The page and server are written in JavaScript using Express.js, React and Node.js.  
 		    </p>
 		  </Col>
 		</Row> 
